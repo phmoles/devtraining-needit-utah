@@ -8,6 +8,7 @@
         <order>100</order>
         <script><![CDATA[// Set the record priority to 2 - High
 current.priority = 2;
+current.state = 2;
 // Update the record in the database
 current.update();]]></script>
         <synchronous>false</synchronous>
@@ -17,7 +18,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8ccfa264972d4e90a3e337971153af9b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Update Due Soon NeedIt Task Priority</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -25,6 +26,6 @@ current.update();]]></script>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysevent_script_action_8ccfa264972d4e90a3e337971153af9b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-10 20:09:17</sys_updated_on>
+        <sys_updated_on>2024-04-10 23:30:09</sys_updated_on>
     </sysevent_script_action>
 </record_update>
