@@ -41,8 +41,9 @@
 <p><strong>An overdue NeedIt Task is assigned to you:</strong></p>
 <p><strong>Number:</strong> ${number}</p>
 <p><strong>Short description:</strong> ${short_description}<strong><br /></strong></p>
-<p>${mail_script:CountOverdueNeedItTasksAssignedTo}</p>
 <p><strong>Please complete this task as soon as possible. </strong></p>
+<p>${mail_script:CountOverdueNeedItTasksAssignedTo}</p>
+<p>${mailto:mailto.closeneedittask}</p>
 <p>Click here to view the<strong> NeedIt </strong>Task record: ${URI_REF}</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -65,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81b9efe497218e90a3e337971153aff8</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Overdue NeedIt Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -73,7 +74,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysevent_email_action_81b9efe497218e90a3e337971153aff8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-11 22:01:50</sys_updated_on>
+        <sys_updated_on>2024-04-22 22:20:59</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
