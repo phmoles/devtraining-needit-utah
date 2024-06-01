@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_cubes">
+    <pa_cubes action="INSERT_OR_UPDATE">
+        <benchmarking>false</benchmarking>
+        <calendar>standard</calendar>
+        <calendar_freq/>
+        <conditions table="sc_task">opened_atONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^ORopened_at&lt;javascript:gs.beginningOfToday()^closed_atISEMPTY^ORclosed_at&gt;javascript:gs.endOfToday()^stateNOT IN4,7<item endquery="false" field="opened_at" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+            <item endquery="false" field="opened_at" goto="false" newquery="false" operator="&lt;" or="true" value="javascript:gs.beginningOfToday()"/>
+            <item endquery="false" field="closed_at" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="closed_at" goto="false" newquery="false" operator="&gt;" or="true" value="javascript:gs.endOfToday()"/>
+            <item display_value="4,7" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="4,7"/>
+        </conditions>
+        <description>Tasks indicator source open</description>
+        <facts_table>sc_task</facts_table>
+        <facts_table_pk/>
+        <facts_table_pktable/>
+        <facts_table_pkview/>
+        <frequency>10</frequency>
+        <max_record_fetch_count>50000</max_record_fetch_count>
+        <name>Tasks.Open</name>
+        <override_record_collection>false</override_record_collection>
+        <report_source/>
+        <report_source_updated_at/>
+        <sys_class_name>pa_cubes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-31 19:29:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7dd49cd97e20210a3e337971153af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tasks.Open</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>pa_cubes_f7dd49cd97e20210a3e337971153af00</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-31 19:29:39</sys_updated_on>
+    </pa_cubes>
+    <sys_translated_text action="delete_multiple" query="documentkey=f7dd49cd97e20210a3e337971153af00"/>
+</record_update>
